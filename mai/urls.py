@@ -4,5 +4,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^keijiban/', include('keijiban.urls')),
+    url(r'^cnn/', include('cnn.urls')),
     url(r'^admin/', admin.site.urls),
 ]

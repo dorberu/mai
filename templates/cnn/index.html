@@ -1,0 +1,13 @@
+{% extends "cnn/base_site.html" %}
+{% block content %}
+
+<div class="mt-5 text-center">
+  <h1 class="display-5">ディープラーニングデモ</h1>
+  <p class="lead">手書きの画像をアップロードし、OKを押してください</p>
+  <form action="{% url 'cnn:upload' %}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="files[]" multiple>
+    <input type="submit" class="btn btn-lg btn-secondary" value="送信">
+    {% csrf_token %}
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "cnn/base_site.html" %}
+{% block content %}
+
+<div class="mt-5 text-center">
+  {% for data in result %}
+    <img class="img-fluid" src="data:image/png;base64,{{ data.0 }}">
+    <p class="lead">画像は{{ data.1 }}です。</p>
+    <hr>
+  {% endfor %}
+  <a class="btn btn-lg btn-secondary"  href="{% url 'cnn:index' %}">戻る</a>
+</div>
+ 
+{% endblock %}
