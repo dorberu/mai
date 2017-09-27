@@ -1,0 +1,1092 @@
+[11/Sep/2017 06:56:12] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+[11/Sep/2017 06:56:25] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+[11/Sep/2017 06:56:31] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+[11/Sep/2017 06:56:34] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+[11/Sep/2017 08:36:23] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+Not Found: /favicon.ico
+[11/Sep/2017 08:36:23] "GET /favicon.ico HTTP/1.1" 404 2181
+[11/Sep/2017 08:37:05] "POST /keijiban/kakikomi/ HTTP/1.1" 200 854
+[11/Sep/2017 08:37:17] "GET /keijiban/ HTTP/1.1" 200 40
+[11/Sep/2017 09:29:47] "GET /keijiban/kakikomi/ HTTP/1.1" 200 834
+Not Found: /favicon.ico
+[11/Sep/2017 09:29:47] "GET /favicon.ico HTTP/1.1" 404 2181
+[11/Sep/2017 09:29:57] "POST /keijiban/kakikomi/ HTTP/1.1" 200 854
+[11/Sep/2017 13:18:40] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[11/Sep/2017 13:18:40] "GET /favicon.ico HTTP/1.1" 404 2181
+[12/Sep/2017 15:23:21] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[12/Sep/2017 15:23:21] "GET /favicon.ico HTTP/1.1" 404 2181
+Not Found: /recordings/
+[13/Sep/2017 09:02:55] "GET /recordings/ HTTP/1.1" 404 2181
+Not Found: /a2billing/admin/Public/index.php
+[13/Sep/2017 09:02:55] "GET /a2billing/admin/Public/index.php HTTP/1.1" 404 2244
+[13/Sep/2017 09:02:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03§z³Eä\x88\x0e$ßë<§¾R²\x19l)bwýñ')
+[13/Sep/2017 09:02:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[13/Sep/2017 09:02:57] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x037\x88÷ø«ªÆ¹ò\x83"nÉ«Ï)ÉÒ{DEòj\x9d4¬¹±Õ.')
+[13/Sep/2017 09:02:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[13/Sep/2017 15:24:42] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[13/Sep/2017 15:24:42] "GET /favicon.ico HTTP/1.1" 404 2181
+[14/Sep/2017 13:30:13] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[14/Sep/2017 13:30:13] "GET /favicon.ico HTTP/1.1" 404 2181
+[15/Sep/2017 15:38:14] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[15/Sep/2017 15:38:15] "GET /favicon.ico HTTP/1.1" 404 2181
+Not Found: /manager/html
+[15/Sep/2017 18:13:08] "GET /manager/html HTTP/1.1" 404 2184
+Not Found: /manager/html
+[15/Sep/2017 18:13:08] "GET /manager/html HTTP/1.1" 404 2184
+Invalid HTTP_HOST header: 'service.cs2accidcfcloud.internal:8181'. You may need to add 'service.cs2accidcfcloud.internal' to ALLOWED_HOSTS.
+[16/Sep/2017 06:06:46] "GET / HTTP/1.0" 400 60160
+Not Found: /favicon.ico
+[16/Sep/2017 15:17:40] "GET /favicon.ico HTTP/1.1" 404 2181
+Not Found: /hedwig.cgi
+[17/Sep/2017 08:51:42] "POST /hedwig.cgi HTTP/1.1" 404 2179
+Not Found: /shell
+[17/Sep/2017 08:51:42] "GET /shell?cat%20/etc/passwd HTTP/1.1" 404 2181
+[17/Sep/2017 12:03:39] "GET /keijiban/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[17/Sep/2017 21:08:07] "GET /favicon.ico HTTP/1.1" 404 2181
+Not Found: /manager/html
+[21/Sep/2017 21:44:08] "GET /manager/html HTTP/1.1" 404 2184
+Not Found: /manager/html
+[21/Sep/2017 21:44:08] "GET /manager/html HTTP/1.1" 404 2184
+Not Found: /hedwig.cgi
+[22/Sep/2017 05:48:43] "GET /hedwig.cgi HTTP/1.1" 404 2178
+Invalid HTTP_HOST header: 'dorberu.work:8181'. You may need to add 'dorberu.work' to ALLOWED_HOSTS.
+[22/Sep/2017 16:08:37] "GET / HTTP/1.1" 400 61040
+Invalid HTTP_HOST header: 'dorberu.work:8181'. You may need to add 'dorberu.work' to ALLOWED_HOSTS.
+[22/Sep/2017 16:08:38] "GET /favicon.ico HTTP/1.1" 400 61121
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 11, 2017 - 06:56:03
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Not Found: /
+[22/Sep/2017 16:12:55] "GET / HTTP/1.1" 404 2128
+Not Found: /favicon.ico
+[22/Sep/2017 16:12:55] "GET /favicon.ico HTTP/1.1" 404 2179
+[22/Sep/2017 16:13:04] "GET /polls HTTP/1.1" 301 0
+[22/Sep/2017 16:13:04] "GET /polls/ HTTP/1.1" 200 40
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 22, 2017 - 16:12:53
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 22, 2017 - 17:47:04
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Invalid HTTP_HOST header: 'dorberu.work:8181'. You may need to add 'dorberu.work' to ALLOWED_HOSTS.
+[22/Sep/2017 17:48:11] "GET /polls/ HTTP/1.1" 400 61267
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 22, 2017 - 17:47:41
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[22/Sep/2017 17:48:27] "GET /polls/ HTTP/1.1" 200 40
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 22, 2017 - 17:48:26
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 22, 2017 - 17:59:12
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 14:10:12
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[23/Sep/2017 16:26:01] "GET /admin/ HTTP/1.1" 302 0
+[23/Sep/2017 16:26:01] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[23/Sep/2017 16:26:01] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[23/Sep/2017 16:26:01] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[23/Sep/2017 16:26:01] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[23/Sep/2017 16:26:01] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[23/Sep/2017 16:26:01] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[23/Sep/2017 16:58:02] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[23/Sep/2017 16:58:12] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[23/Sep/2017 16:58:12] "GET /admin/ HTTP/1.1" 200 2781
+[23/Sep/2017 16:58:12] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[23/Sep/2017 16:58:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[23/Sep/2017 16:58:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[23/Sep/2017 16:58:12] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[23/Sep/2017 17:01:27] "GET /admin/auth/user/ HTTP/1.1" 200 6464
+[23/Sep/2017 17:01:27] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[23/Sep/2017 17:01:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Sep/2017 17:01:27] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[23/Sep/2017 17:01:27] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[23/Sep/2017 17:01:27] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[23/Sep/2017 17:01:27] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[23/Sep/2017 17:01:27] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[23/Sep/2017 17:01:27] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[23/Sep/2017 17:01:27] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[23/Sep/2017 17:01:27] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[23/Sep/2017 17:01:27] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[23/Sep/2017 17:01:27] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[23/Sep/2017 17:01:27] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[23/Sep/2017 17:01:27] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[23/Sep/2017 17:01:30] "GET /admin/ HTTP/1.1" 200 2781
+[23/Sep/2017 17:01:31] "GET /admin/auth/group/ HTTP/1.1" 200 3381
+[23/Sep/2017 17:01:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Sep/2017 17:01:33] "GET /admin/ HTTP/1.1" 200 2781
+Not Found: /
+[23/Sep/2017 17:01:39] "GET / HTTP/1.1" 404 2128
+[23/Sep/2017 17:01:43] "GET /admin/ HTTP/1.1" 200 2781
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 14:23:57
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): polls.
+Run 'python manage.py migrate' to apply them.
+September 23, 2017 - 17:28:02
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): polls.
+Run 'python manage.py migrate' to apply them.
+September 23, 2017 - 17:28:21
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[23/Sep/2017 17:29:43] "GET /admin/ HTTP/1.1" 200 3426
+Internal Server Error: /admin/polls/question/
+Traceback (most recent call last):
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: polls_question
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: polls_question
+[23/Sep/2017 17:29:46] "GET /admin/polls/question/ HTTP/1.1" 500 175409
+[23/Sep/2017 17:29:48] "GET /admin/ HTTP/1.1" 200 3426
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): polls.
+Run 'python manage.py migrate' to apply them.
+September 23, 2017 - 17:28:40
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[23/Sep/2017 17:31:09] "GET /admin/ HTTP/1.1" 200 3426
+Internal Server Error: /admin/polls/question/
+Traceback (most recent call last):
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: polls_question
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: polls_question
+[23/Sep/2017 17:31:10] "GET /admin/polls/question/ HTTP/1.1" 500 175409
+[23/Sep/2017 18:00:48] "GET /admin/ HTTP/1.1" 200 3426
+[23/Sep/2017 18:00:50] "GET /admin/polls/question/ HTTP/1.1" 200 3052
+[23/Sep/2017 18:00:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Sep/2017 18:21:41] "GET /admin/polls/question/ HTTP/1.1" 200 4197
+[23/Sep/2017 18:21:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Sep/2017 18:21:43] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 4976
+[23/Sep/2017 18:21:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Sep/2017 18:21:43] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[23/Sep/2017 18:21:43] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[23/Sep/2017 18:21:43] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[23/Sep/2017 18:21:43] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[23/Sep/2017 18:21:43] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[23/Sep/2017 18:21:43] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[23/Sep/2017 18:21:44] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[23/Sep/2017 18:21:44] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[23/Sep/2017 18:21:46] "GET /admin/polls/question/ HTTP/1.1" 200 4197
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): polls.
+Run 'python manage.py migrate' to apply them.
+September 23, 2017 - 17:31:05
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 18:26:05
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/base.py:325: RuntimeWarning: Model 'polls.question' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/db/models/base.py:325: RuntimeWarning: Model 'polls.choice' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 18:27:21
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 18:27:48
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[23/Sep/2017 18:37:24] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 4975
+[23/Sep/2017 18:37:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 18:29:47
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[23/Sep/2017 18:40:32] "GET /polls/ HTTP/1.1" 200 40
+[23/Sep/2017 18:40:32] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+Not Found: /favicon.ico
+[23/Sep/2017 18:40:32] "GET /favicon.ico HTTP/1.1" 404 2179
+Not Found: /favicon.ico
+[23/Sep/2017 18:40:32] "GET /favicon.ico HTTP/1.1" 404 2179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2017 - 18:38:34
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 03:41:31
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 03:41:45] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5043
+[24/Sep/2017 03:41:45] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 03:41:53] "POST /admin/polls/question/1/change/ HTTP/1.1" 302 0
+[24/Sep/2017 03:41:54] "GET /admin/polls/question/ HTTP/1.1" 200 4499
+[24/Sep/2017 03:41:54] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 03:42:05] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5043
+[24/Sep/2017 03:42:05] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 03:42:08] "GET /admin/polls/question/1/history/ HTTP/1.1" 200 2168
+[24/Sep/2017 03:42:45] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1683
+[24/Sep/2017 03:42:45] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[24/Sep/2017 03:42:45] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[24/Sep/2017 03:42:46] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[24/Sep/2017 03:42:46] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[24/Sep/2017 03:42:46] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[24/Sep/2017 03:50:31] "GET /admin/polls/ HTTP/1.1" 200 2254
+[24/Sep/2017 03:50:33] "GET /admin/polls/question/ HTTP/1.1" 200 4311
+[24/Sep/2017 03:50:33] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 03:50:39] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5043
+[24/Sep/2017 03:50:39] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 14:29:29] "GET /admin/polls/question/1/ HTTP/1.1" 302 0
+[24/Sep/2017 14:29:29] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5043
+[24/Sep/2017 14:29:29] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 14:29:32] "GET /admin/polls/question/ HTTP/1.1" 200 4311
+[24/Sep/2017 14:29:32] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 14:29:34] "GET /admin/polls/ HTTP/1.1" 200 2254
+[24/Sep/2017 14:29:38] "GET /admin/polls/ HTTP/1.1" 200 2254
+Not Found: /admii/
+[24/Sep/2017 14:29:47] "GET /admii/ HTTP/1.1" 404 2164
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 03:41:33
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 14:32:44] "GET /admii/ HTTP/1.1" 404 80
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 14:32:43
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 14:43:26
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 14:43:53
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 14:44:48] "GET /admin/polls/34/ HTTP/1.1" 404 89
+[24/Sep/2017 14:44:52] "GET /polls/34/ HTTP/1.1" 200 30
+[24/Sep/2017 14:45:18] "GET /polls/34/results/ HTTP/1.1" 200 45
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 14:44:36
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:05:57
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:06:09] "GET / HTTP/1.1" 404 74
+[24/Sep/2017 15:06:14] "GET /polls/ HTTP/1.1" 200 10
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:06:07
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:14:24] "GET /polls/ HTTP/1.1" 200 10
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:12:00
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:17:41] "GET /polls/ HTTP/1.1" 500 27
+[24/Sep/2017 15:17:46] "GET /polls/index.html HTTP/1.1" 404 90
+[24/Sep/2017 15:17:48] "GET /polls/ HTTP/1.1" 500 27
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:17:39
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:18:22] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 15:18:24] "GET /polls/1/ HTTP/1.1" 200 29
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:18:19
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:24:29] "GET /polls/ HTTP/1.1" 200 87
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:24:27
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 15:49:04] "GET /admin/polls/ HTTP/1.1" 302 0
+[24/Sep/2017 15:49:04] "GET /admin/login/?next=/admin/polls/ HTTP/1.1" 200 1695
+[24/Sep/2017 15:49:05] "GET /admin/polls/ HTTP/1.1" 302 0
+[24/Sep/2017 15:49:05] "GET /admin/login/?next=/admin/polls/ HTTP/1.1" 200 1695
+[24/Sep/2017 15:49:05] "GET /static/admin/css/login.css HTTP/1.1" 404 100
+[24/Sep/2017 15:49:05] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:25:20
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 15:54:04
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:06:08
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/__init__.py", line 364, in execute_from_command_line
+    utility.execute()
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/__init__.py", line 356, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/base.py", line 283, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 62, in execute
+    super(Command, self).execute(*args, **options)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/base.py", line 330, in execute
+    output = self.handle(*args, **options)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 101, in handle
+    self.run(**options)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 110, in run
+    autoreload.main(self.inner_run, None, options)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/autoreload.py", line 341, in main
+    reloader(wrapped_main_func, args, kwargs)
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/autoreload.py", line 307, in python_reloader
+    reloader_thread()
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/autoreload.py", line 277, in reloader_thread
+    change = fn()
+  File "/home/django/.pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/django/utils/autoreload.py", line 207, in code_changed
+    stat = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/django/mai/polls/views.py'
+[24/Sep/2017 16:12:12] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 16:12:17] "GET /polls/detail.html HTTP/1.1" 404 91
+[24/Sep/2017 16:12:20] "GET /polls/detail HTTP/1.1" 404 86
+[24/Sep/2017 16:12:26] "GET /polls/34/detail HTTP/1.1" 404 89
+[24/Sep/2017 16:12:59] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 16:13:03] "GET /polls/requext HTTP/1.1" 404 87
+[24/Sep/2017 16:13:06] "GET /polls/request HTTP/1.1" 404 87
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:12:09
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:13:17] "GET /polls/results HTTP/1.1" 404 87
+[24/Sep/2017 16:13:26] "GET /polls/results/1 HTTP/1.1" 404 89
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:13:12
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:13:57] "GET /polls/results/1 HTTP/1.1" 404 89
+[24/Sep/2017 16:13:59] "GET /polls/results HTTP/1.1" 404 87
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:13:55
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:16:42] "GET /polls/1/results HTTP/1.1" 301 0
+[24/Sep/2017 16:16:42] "GET /polls/1/results/ HTTP/1.1" 500 27
+[24/Sep/2017 16:16:55] "GET /polls/1/detail/ HTTP/1.1" 404 89
+[24/Sep/2017 16:17:21] "GET /polls/1/vote HTTP/1.1" 301 0
+[24/Sep/2017 16:17:21] "GET /polls/1/vote/ HTTP/1.1" 500 27
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:14:31
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:17:46
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:18:34
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:18:48
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:19:02
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:19:08] "GET /polls/1/vote/ HTTP/1.1" 500 27
+[24/Sep/2017 16:23:04] "GET /polls/1/detail/ HTTP/1.1" 404 89
+[24/Sep/2017 16:23:22] "GET /polls/1/ HTTP/1.1" 200 81
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:19:06
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:26:28] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 16:26:29] "GET /polls/1/ HTTP/1.1" 200 81
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 16:23:50
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 16:54:28] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 16:54:30] "GET /polls/1/ HTTP/1.1" 200 81
+[24/Sep/2017 16:59:08] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 16:59:09] "GET /polls/1/ HTTP/1.1" 200 81
+[24/Sep/2017 16:59:23] "GET /polls/1/ HTTP/1.1" 200 81
+[24/Sep/2017 17:00:06] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 17:00:08] "GET /polls/1/ HTTP/1.1" 200 81
+[24/Sep/2017 17:00:22] "GET /polls/1/ HTTP/1.1" 200 81
+[24/Sep/2017 17:01:10] "GET /polls/1/ HTTP/1.1" 200 468
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 17:01:04
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 17:17:59
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 17:18:18] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[24/Sep/2017 17:18:18] "GET /polls/1/results/ HTTP/1.1" 200 44
+[24/Sep/2017 17:18:25] "GET /polls/1/results/ HTTP/1.1" 200 44
+[24/Sep/2017 17:18:28] "GET /polls/1/results/ HTTP/1.1" 200 44
+[24/Sep/2017 17:18:32] "GET /polls/ HTTP/1.1" 200 87
+[24/Sep/2017 17:18:40] "GET /admin/polls/ HTTP/1.1" 200 2254
+[24/Sep/2017 17:18:42] "GET /admin/polls/question/ HTTP/1.1" 200 4327
+[24/Sep/2017 17:18:42] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 17:18:42] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[24/Sep/2017 17:18:42] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[24/Sep/2017 17:18:42] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:42] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:42] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:43] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5059
+[24/Sep/2017 17:18:43] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 17:18:43] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[24/Sep/2017 17:18:43] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:43] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[24/Sep/2017 17:18:43] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:43] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:43] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:48] "GET /admin/polls/question/ HTTP/1.1" 200 4327
+[24/Sep/2017 17:18:48] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[24/Sep/2017 17:18:48] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 17:18:48] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:48] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[24/Sep/2017 17:18:48] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:48] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[24/Sep/2017 17:18:48] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[24/Sep/2017 17:18:48] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:48] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:49] "GET /admin/polls/ HTTP/1.1" 200 2254
+[24/Sep/2017 17:18:51] "GET /admin/ HTTP/1.1" 200 3815
+[24/Sep/2017 17:18:56] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 5059
+[24/Sep/2017 17:18:56] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[24/Sep/2017 17:18:56] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:56] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[24/Sep/2017 17:18:56] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[24/Sep/2017 17:18:56] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:56] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[24/Sep/2017 17:18:56] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[24/Sep/2017 17:18:59] "GET /admin/polls/question/1/history/ HTTP/1.1" 200 2168
+[24/Sep/2017 17:19:01] "GET /admin/ HTTP/1.1" 200 3815
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 24, 2017 - 17:18:13
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[24/Sep/2017 17:23:37] "GET /polls/1/ HTTP/1.1" 200 468
+[24/Sep/2017 17:23:39] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[24/Sep/2017 17:23:39] "GET /polls/1/results/ HTTP/1.1" 200 44
+[25/Sep/2017 03:09:44] "GET /admin HTTP/1.1" 301 0
+[25/Sep/2017 03:09:45] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 03:09:54] "GET /polls/ HTTP/1.1" 200 163
+[25/Sep/2017 03:09:54] "GET /static/polls/style.css HTTP/1.1" 404 96
+[25/Sep/2017 03:09:55] "GET /polls/1/ HTTP/1.1" 200 468
+[25/Sep/2017 03:09:57] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[25/Sep/2017 03:09:57] "GET /polls/1/results/ HTTP/1.1" 200 140
+[25/Sep/2017 03:10:00] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 03:10:02] "GET /admin/polls/question/ HTTP/1.1" 200 6087
+[25/Sep/2017 03:10:02] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:10:02] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 03:10:02] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 03:10:02] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 03:10:02] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 03:10:02] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 03:10:02] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:10:02] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 03:10:02] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 03:10:04] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 13324
+[25/Sep/2017 03:10:04] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 03:10:04] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:10:04] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 03:10:04] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 03:10:04] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 03:10:04] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 03:10:04] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:10:04] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:10:04] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 03:10:04] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 03:10:04] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 03:10:04] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 03:48:59] "GET /favicon.ico HTTP/1.1" 404 85
+[25/Sep/2017 15:54:10] "GET /polls HTTP/1.1" 301 0
+[25/Sep/2017 15:54:10] "GET /polls/ HTTP/1.1" 200 163
+[25/Sep/2017 15:54:10] "GET /static/polls/style.css HTTP/1.1" 404 96
+[25/Sep/2017 15:54:11] "GET /favicon.ico HTTP/1.1" 404 85
+[25/Sep/2017 15:54:12] "GET /polls/1/ HTTP/1.1" 200 468
+[25/Sep/2017 15:54:14] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[25/Sep/2017 15:54:14] "GET /polls/1/results/ HTTP/1.1" 200 140
+[25/Sep/2017 15:54:22] "GET /admin HTTP/1.1" 301 0
+[25/Sep/2017 15:54:22] "GET /admin/ HTTP/1.1" 302 0
+[25/Sep/2017 15:54:22] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1673
+[25/Sep/2017 15:54:22] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:22] "GET /static/admin/css/login.css HTTP/1.1" 404 100
+[25/Sep/2017 15:54:28] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Sep/2017 15:54:28] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 15:54:28] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:28] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:54:32] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 15:54:32] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:32] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:54:32] "GET /favicon.ico HTTP/1.1" 404 85
+[25/Sep/2017 15:54:35] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 15:54:35] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:35] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:54:37] "GET /admin/ HTTP/1.1" 200 3805
+[25/Sep/2017 15:54:37] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:37] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:54:40] "GET /admin/polls/ HTTP/1.1" 200 2244
+[25/Sep/2017 15:54:40] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:54:40] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:54:53] "GET /polls/1/ HTTP/1.1" 200 468
+[25/Sep/2017 15:54:54] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[25/Sep/2017 15:54:54] "GET /polls/1/results/ HTTP/1.1" 200 140
+[25/Sep/2017 15:55:20] "GET /polls/1/ HTTP/1.1" 200 468
+[25/Sep/2017 15:55:23] "GET /admin/polls/ HTTP/1.1" 200 2244
+[25/Sep/2017 15:55:24] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:55:24] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+[25/Sep/2017 15:55:26] "GET /admin/polls/question/ HTTP/1.1" 200 6087
+[25/Sep/2017 15:55:26] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:55:26] "GET /static/admin/css/changelists.css HTTP/1.1" 404 106
+[25/Sep/2017 15:55:26] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:55:26] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:55:26] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:55:26] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:26] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:26] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:26] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:55:26] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:55:26] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:26] "GET /static/admin/img/search.svg HTTP/1.1" 404 101
+[25/Sep/2017 15:55:26] "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 102
+[25/Sep/2017 15:55:33] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 13324
+[25/Sep/2017 15:55:33] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:55:33] "GET /static/admin/css/forms.css HTTP/1.1" 404 100
+[25/Sep/2017 15:55:33] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:55:33] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:55:33] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:55:33] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:33] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:33] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:55:33] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:55:33] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:33] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:55:33] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:55:33] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:55:33] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:55:34] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:55:34] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:55:34] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:34] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:55:34] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:55:34] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:34] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:55:34] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:55:34] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:55:34] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:34] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:55:40] "POST /admin/polls/question/1/change/ HTTP/1.1" 302 0
+[25/Sep/2017 15:55:40] "GET /admin/polls/question/ HTTP/1.1" 200 6275
+[25/Sep/2017 15:55:40] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:55:40] "GET /static/admin/css/changelists.css HTTP/1.1" 404 106
+[25/Sep/2017 15:55:40] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:55:40] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:55:40] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:55:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:40] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:40] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:40] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:55:40] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:55:40] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:40] "GET /static/admin/img/search.svg HTTP/1.1" 404 101
+[25/Sep/2017 15:55:40] "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 102
+[25/Sep/2017 15:55:44] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14569
+[25/Sep/2017 15:55:44] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:55:44] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:55:44] "GET /static/admin/css/forms.css HTTP/1.1" 404 100
+[25/Sep/2017 15:55:44] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:55:44] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:55:44] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:44] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:44] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:44] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:55:44] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:55:44] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:55:44] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:55:44] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:55:44] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:55:44] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:44] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:55:44] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:57:30] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14569
+[25/Sep/2017 15:57:30] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:57:30] "GET /static/admin/css/forms.css HTTP/1.1" 404 100
+[25/Sep/2017 15:57:30] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:57:30] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:57:30] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:57:30] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:30] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:30] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:30] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:57:30] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:57:30] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:30] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:57:30] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:57:30] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:57:30] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:30] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:30] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:57:31] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14569
+[25/Sep/2017 15:57:31] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:57:31] "GET /static/admin/css/forms.css HTTP/1.1" 404 100
+[25/Sep/2017 15:57:31] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:57:31] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:57:31] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:57:31] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:31] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:31] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:31] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:57:31] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:57:31] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:31] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:57:31] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:57:31] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:57:31] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:31] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:31] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:57:35] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14569
+[25/Sep/2017 15:57:35] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:57:35] "GET /static/admin/css/forms.css HTTP/1.1" 404 100
+[25/Sep/2017 15:57:35] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:57:35] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:57:35] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:57:35] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:35] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:57:35] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:57:35] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:35] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:57:35] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:57:35] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:57:35] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:57:35] "GET /static/admin/js/core.js HTTP/1.1" 404 97
+[25/Sep/2017 15:57:35] "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 117
+[25/Sep/2017 15:57:35] "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:35] "GET /static/admin/js/actions.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/urlify.js HTTP/1.1" 404 99
+[25/Sep/2017 15:57:35] "GET /static/admin/js/prepopulate.min.js HTTP/1.1" 404 108
+[25/Sep/2017 15:57:35] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 119
+[25/Sep/2017 15:57:35] "GET /static/admin/js/calendar.js HTTP/1.1" 404 101
+[25/Sep/2017 15:57:35] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 116
+[25/Sep/2017 15:57:35] "GET /static/admin/js/collapse.min.js HTTP/1.1" 404 105
+[25/Sep/2017 15:57:35] "GET /static/admin/js/inlines.min.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/change_form.js HTTP/1.1" 404 104
+[25/Sep/2017 15:57:35] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 109
+[25/Sep/2017 15:57:35] "GET /favicon.ico HTTP/1.1" 404 85
+[25/Sep/2017 15:57:40] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 15:57:40] "GET /static/admin/css/base.css HTTP/1.1" 404 99
+[25/Sep/2017 15:57:40] "GET /static/admin/css/dashboard.css HTTP/1.1" 404 104
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2017 - 15:57:28
+Django version 1.11.5, using settings 'mai.settings'
+Starting development server at http://0.0.0.0:8181/
+Quit the server with CONTROL-C.
+[25/Sep/2017 15:58:10] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 15:58:10] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[25/Sep/2017 15:58:10] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[25/Sep/2017 15:58:10] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Sep/2017 15:58:10] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Sep/2017 15:58:10] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Sep/2017 15:58:10] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[25/Sep/2017 15:58:10] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[25/Sep/2017 15:58:10] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[25/Sep/2017 15:58:12] "GET /admin/polls/question/ HTTP/1.1" 200 6071
+[25/Sep/2017 15:58:12] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[25/Sep/2017 15:58:12] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:58:12] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[25/Sep/2017 15:58:12] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Sep/2017 15:58:12] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[25/Sep/2017 15:58:12] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[25/Sep/2017 15:58:12] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[25/Sep/2017 15:58:12] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[25/Sep/2017 15:58:12] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[25/Sep/2017 15:58:12] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Sep/2017 15:58:12] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Sep/2017 15:58:12] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[25/Sep/2017 15:58:12] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Sep/2017 15:58:13] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14545
+[25/Sep/2017 15:58:13] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[25/Sep/2017 15:58:13] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 15:58:13] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[25/Sep/2017 15:58:13] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[25/Sep/2017 15:58:13] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[25/Sep/2017 15:58:13] "GET /static/admin/js/inlines.js HTTP/1.1" 200 13665
+[25/Sep/2017 15:58:13] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1151
+[25/Sep/2017 15:58:13] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[25/Sep/2017 15:58:13] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[25/Sep/2017 15:58:21] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 15:58:23] "GET /polls/1/ HTTP/1.1" 200 577
+[25/Sep/2017 15:58:25] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[25/Sep/2017 15:58:25] "GET /polls/1/results/ HTTP/1.1" 200 169
+[25/Sep/2017 16:54:08] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 16:54:18] "GET /polls/ HTTP/1.1" 200 163
+[25/Sep/2017 16:54:18] "GET /static/polls/style.css HTTP/1.1" 200 109
+[25/Sep/2017 16:54:18] "GET /static/polls/images/background.gif HTTP/1.1" 200 39118
+[25/Sep/2017 18:25:36] "GET /polls/ HTTP/1.1" 200 163
+[25/Sep/2017 18:25:36] "GET /static/polls/style.css HTTP/1.1" 200 109
+[25/Sep/2017 18:25:36] "GET /static/polls/images/background.gif HTTP/1.1" 200 39118
+Not Found: /favicon.ico
+[25/Sep/2017 18:25:37] "GET /favicon.ico HTTP/1.1" 404 2179
+[25/Sep/2017 18:25:39] "GET /polls/1/ HTTP/1.1" 200 577
+[25/Sep/2017 18:25:45] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[25/Sep/2017 18:25:45] "GET /polls/1/results/ HTTP/1.1" 200 169
+[25/Sep/2017 18:25:49] "GET /polls/1/ HTTP/1.1" 200 577
+[25/Sep/2017 18:26:00] "GET /admin HTTP/1.1" 301 0
+[25/Sep/2017 18:26:00] "GET /admin/ HTTP/1.1" 302 0
+[25/Sep/2017 18:26:00] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1673
+[25/Sep/2017 18:26:00] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[25/Sep/2017 18:26:00] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[25/Sep/2017 18:26:00] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Sep/2017 18:26:00] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[25/Sep/2017 18:26:00] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[25/Sep/2017 18:26:07] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Sep/2017 18:26:08] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 18:26:08] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[25/Sep/2017 18:26:08] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[25/Sep/2017 18:26:08] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Sep/2017 18:26:08] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Sep/2017 18:26:12] "GET /admin/polls/question/ HTTP/1.1" 200 6071
+[25/Sep/2017 18:26:12] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[25/Sep/2017 18:26:12] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 18:26:12] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[25/Sep/2017 18:26:12] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Sep/2017 18:26:12] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[25/Sep/2017 18:26:12] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[25/Sep/2017 18:26:13] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[25/Sep/2017 18:26:13] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[25/Sep/2017 18:26:13] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Sep/2017 18:26:13] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[25/Sep/2017 18:26:14] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Sep/2017 18:26:14] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[25/Sep/2017 18:26:14] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Sep/2017 18:26:17] "GET /admin/polls/question/1/change/ HTTP/1.1" 200 14545
+[25/Sep/2017 18:26:18] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[25/Sep/2017 18:26:18] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 18:26:18] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[25/Sep/2017 18:26:18] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[25/Sep/2017 18:26:18] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1151
+[25/Sep/2017 18:26:18] "GET /static/admin/js/inlines.js HTTP/1.1" 200 13665
+[25/Sep/2017 18:26:18] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[25/Sep/2017 18:26:18] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[25/Sep/2017 18:26:18] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[25/Sep/2017 18:26:27] "GET /admin/polls/question/ HTTP/1.1" 200 6071
+[25/Sep/2017 18:26:27] "GET /admin/jsi18n/ HTTP/1.1" 200 8718
+[25/Sep/2017 18:26:29] "GET /admin/polls/ HTTP/1.1" 200 2244
+[25/Sep/2017 18:26:32] "GET /admin/ HTTP/1.1" 200 4104
+[25/Sep/2017 18:56:52] "GET /admin/polls/ HTTP/1.1" 302 0
+Not Found: /
+[25/Sep/2017 18:56:52] "GET / HTTP/1.1" 404 2128
+[25/Sep/2017 18:56:52] "GET /polls/ HTTP/1.1" 200 163
+[25/Sep/2017 18:56:52] "GET /admin/login/?next=/admin/polls/ HTTP/1.1" 200 1685
+Not Found: /favicon.ico
+[25/Sep/2017 18:56:52] "GET /favicon.ico HTTP/1.1" 404 2179
+Not Found: /favicon.ico
+[25/Sep/2017 18:56:53] "GET /favicon.ico HTTP/1.1" 404 2179
+Not Found: /
+[25/Sep/2017 18:56:53] "GET / HTTP/1.1" 404 2128
