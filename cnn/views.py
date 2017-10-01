@@ -1,9 +1,10 @@
 import base64
- 
+
 from django.shortcuts import render, redirect
 from django.views import generic
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
+from io import BytesIO
  
 from cnn.simple_convnet import SimpleConvNet
  
@@ -22,6 +23,7 @@ def upload(request):
         array_list = []
         for file in files:
             img = Image.open(file)
+            img = ImageOps.grayscale(img.resize((28, 28)))
             array = np.asarray(img)
             array_list.append(array)
  
@@ -31,7 +33,12 @@ def upload(request):
         for file, label in zip(files, labels):
             file.seek(0)
             src = base64.b64encode(file.read())
-            result.append((src, label))
+            img = Image.open(file)
+            img = ImageOps.grayscale(img.resize((28, 28)))
+            buffer = BytesIO()
+            img.save(buffer, format="PNG")
+            out = base64.b64encode(buffer.getvalue())
+            result.append((src, out, label))
         context = {
             'result': result,
         }
