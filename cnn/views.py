@@ -3,6 +3,7 @@ import base64
 from django.shortcuts import render, redirect
 from django.views import generic
 import numpy as np
+import imghdr
 from PIL import Image, ImageOps
 from io import BytesIO
  
@@ -19,13 +20,20 @@ class Home(generic.TemplateView):
  
 def upload(request):
     files = request.FILES.getlist("files[]")
-    if request.method == 'POST' and files:
+    if request.method == 'POST' and len(files) > 0:
         array_list = []
         for file in files:
+            if imghdr.what(file) != 'png':
+                continue
             img = Image.open(file)
+            if img.size[0] >= 2048 or img.size[1] >= 2048:
+                continue
             img = ImageOps.grayscale(img.resize((28, 28)))
             array = np.asarray(img)
             array_list.append(array)
+
+        if len(array_list) <= 0:
+            return redirect('cnn:index')
  
         x = np.array(array_list).reshape(len(array_list), 1, 28, 28)
         labels = network.predict(x).argmax(axis=1)
@@ -44,4 +52,4 @@ def upload(request):
         }
         return render(request, 'cnn/result.html', context)
     else:
-        return redirect('cnn/index.html')
+        return redirect('cnn:index')
