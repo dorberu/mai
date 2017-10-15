@@ -63,7 +63,7 @@ def learn(request):
                   evaluate_sample_num_per_epoch=len(t_train))
     trainer.train()
 
-    network.save_params("mai/tmp/cnn/test_params.pkl")
+    network.save_params("tmp/cnn/test_params.pkl")
 
     context = {}
     return render(request, 'cnn/learn.html', context)
@@ -94,7 +94,7 @@ def upload(request):
     network = SimpleConvNet(input_dim=(1, 28, 28),
         conv_param = {'filter_num': 30, 'filter_size': 5, 'pad': 0, 'stride': 1},
         hidden_size=100, output_size=10, weight_init_std=0.01)
-    network.load_params('mai/tmp/cnn/test_params.pkl')
+    network.load_params('tmp/cnn/test_params.pkl')
 
     x = np.array(array_list).reshape(len(array_list), 1, 28, 28)
     labels = network.predict(x).argmax(axis=1)
