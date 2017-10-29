@@ -1,0 +1,12 @@
+{% extends "cnn/base_site.html" %}
+{% block content %}
+
+<div class="mt-5 text-center">
+  学習完了<br /><br />
+  {% for accuracy in accuracies.list %}
+    <p class="lead">訓練データの識別精度：{{ accuracy.train }}、テストデータの識別精度：{{ accuracy.test }}です。</p>
+  {% endfor %}
+  <a class="btn btn-lg btn-secondary"  href="{% url 'nn:index' %}">戻る</a>
+</div>
+ 
+{% endblock %}

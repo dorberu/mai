@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
     'cnn.apps.CnnConfig',
+    'nn.apps.NnConfig',
     'keijiban',
 ]
 

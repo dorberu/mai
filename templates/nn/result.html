@@ -1,0 +1,12 @@
+{% extends "nn/base_site.html" %}
+{% block content %}
+
+<div class="mt-5 text-center">
+  {% for result in results.list %}
+    <p class="lead">識別データ{{ result.str_param }}の結果は{{ result.label }}です。</p>
+  {% endfor %}
+  <hr>
+  <a class="btn btn-lg btn-secondary"  href="{% url 'nn:index' %}">戻る</a>
+</div>
+ 
+{% endblock %}
