@@ -2,9 +2,10 @@
 {% block content %}
 
 <div class="mt-5 text-center">
-  学習完了<br /><br />
+  訓練完了<br />
+  訓練結果のパラメータは下記の通りです。<br /><br />
   {% for accuracy in accuracies.list %}
-    <p class="lead">訓練データの識別精度：{{ accuracy.train }}、テストデータの識別精度：{{ accuracy.test }}です。</p>
+    a<br />
   {% endfor %}
   <a class="btn btn-lg btn-secondary"  href="{% url 'nn:index' %}">戻る</a>
 </div>

@@ -97,3 +97,13 @@ def col2im(col, input_shape, filter_h, filter_w, stride=1, pad=0):
             img[:, :, y:y_max:stride, x:x_max:stride] += col[:, :, y, x, :, :]
 
     return img[:, :, pad:H + pad, pad:W + pad]
+
+
+def save_value(file, s_value):    
+    f = open(file, 'w', encoding="utf-8")
+    f.writelines(str(s_value))
+    f.close()
+
+
+def save_list(file, s_list):    
+    save_value(file, ',' . join(map(str, s_list)))

@@ -4,10 +4,12 @@ from django.shortcuts import render, redirect
 from django.views import generic
 import numpy as np
 import json
+import itertools
 import random
 from io import BytesIO
-from nn.multi_layer_net_extend import MultiLayerNetExtend
-from nn.trainer import Trainer
+from .util import save_value, save_list
+from .multi_layer_net_extend import MultiLayerNetExtend
+from .trainer import Trainer
 
 
 app_name = 'nn'
@@ -39,6 +41,94 @@ class Result:
         self.param = param
         self.label = label
         self.str_param = np.array2string(param, separator=', ')
+
+class Train:
+    def __init__(self):
+        self.current_hsl = []
+        self.current_wdl = 0
+        self.current_op_lr = 0
+        self.result_acc = 0
+        self.result_hsl = []
+        self.result_wdl = 0
+        self.result_op_lr = 0
+    
+    def update(self, acc, hsl, wdl, op_lr):
+        self.current_hsl = hsl
+        self.current_wdl = wdl
+        self.current_op_lr = op_lr
+        self.save_current()
+        if self.result_acc > acc:
+            return False
+        self.result_acc = acc
+        self.result_hsl = hsl
+        self.result_wdl = wdl
+        self.result_op_lr = op_lr
+        self.save_result()
+        return True
+
+    def save_current(self):
+        save_list('tmp/nn/train/current_hsl.txt', self.current_hsl)
+        save_value('tmp/nn/train/current_wdl.txt', self.current_wdl)
+        save_value('tmp/nn/train/current_op_lr.txt', self.current_op_lr)
+
+    def save_result(self):
+        save_value('tmp/nn/train/result_acc.txt', self.result_acc)
+        save_list('tmp/nn/train/result_hsl.txt', self.result_hsl)
+        save_value('tmp/nn/train/result_wdl.txt', self.result_wdl)
+        save_value('tmp/nn/train/result_op_lr.txt', self.result_op_lr)
+
+
+def hidden_size_list(num):
+    node_list = []
+    seq = range(1, 65)
+    for i in seq:
+        node_list.append([i])
+
+    if num <= 1:
+        return node_list
+    for i in range(2, num + 1):
+        for tpl in itertools.combinations_with_replacement(seq, i):
+            node_list.append(list(tpl))
+
+    return node_list
+    
+
+def train(request):
+    if request.method != 'POST':
+        return redirect(app_index)
+
+    learn_file = request.FILES.get("train_file")
+    if learn_file == None:
+        return redirect(app_index)
+
+    learn_dict = json.load(learn_file)
+    keys = learn_dict["keys"]
+    data = np.array(learn_dict["data"])
+    random.shuffle(data)
+    params, result = np.hsplit(data, [data.shape[1] - 1])
+    x_test, x_train = np.vsplit(params, [data.shape[0] // 5])
+    t_test, t_train = np.vsplit(result, [data.shape[0] // 5])
+    input_size = params.shape[1] * 1
+
+    train_data = Train()
+    for hsl in hidden_size_list(3):
+        for wdl in np.arange(0.0000001, 0.00001, 0.0000001):
+            for op_lr in np.arange(0.0000001, 0.00001, 0.0000001):
+                network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=hsl,
+                                            output_size=65, weight_decay_lambda=wdl, use_dropout = True, dropout_ration = 0.1)
+                trainer = Trainer(network, x_train, t_train, x_test, t_test,
+                                epochs=50, mini_batch_size=10,
+                                optimizer='adam', optimizer_param={'lr': op_lr}, verbose=True)
+                trainer.train()
+                train_data.update(trainer.result_acc, hsl, wdl, op_lr)
+
+    accuracies = []
+    context = {
+        "accuracies": accuracies
+    }
+
+    return render(request, app_name + '/train.html', context)
+
 
 def learn(request):
     if request.method != 'POST':
