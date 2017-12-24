@@ -36,6 +36,7 @@ class Trainer:
         self.train_loss_list = []
         self.train_acc_list = []
         self.test_acc_list = []
+        self.result_acc = 0
 
     def train_step(self):
         batch_mask = np.random.choice(self.train_size, self.batch_size)
@@ -59,7 +60,7 @@ class Trainer:
                 t = self.evaluate_sample_num_per_epoch
                 x_train_sample, t_train_sample = self.x_train[:t], self.t_train[:t]
                 x_test_sample, t_test_sample = self.x_test[:t], self.t_test[:t]
-                
+
             train_acc = self.network.accuracy(x_train_sample, t_train_sample)
             test_acc = self.network.accuracy(x_test_sample, t_test_sample)
             self.train_acc_list.append(train_acc)
@@ -73,9 +74,8 @@ class Trainer:
         for i in range(self.max_iter):
             if self.train_step() < 0: break
 
-        test_acc = self.network.accuracy(self.x_test, self.t_test)
+        self.result_acc = self.network.accuracy(self.x_test, self.t_test)
 
         if self.verbose:
             print("=============== Final Test Accuracy ===============")
-            print("test acc:" + str(test_acc))
-
+            print("test acc:" + str(self.result_acc))

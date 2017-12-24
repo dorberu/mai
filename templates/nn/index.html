@@ -1,4 +1,4 @@
-{% extends "cnn/base_site.html" %}
+{% extends "nn/base_site.html" %}
 {% block content %}
 
 <div class="mt-5 text-center">
@@ -20,7 +20,22 @@
   </form>
   <br />
   <br />
-  <p class="lead">学習データと教師データをアップロードし、OKを押してください</p>
+  <p class="lead">訓練データをアップロードし、OKを押してください</p>
+  <form action="{% url 'nn:train' %}" method="POST" enctype="multipart/form-data">
+    <table align="center" border="1">
+      <tr>
+        <td>訓練データ[JSON]</td>
+        <td rowspan="2"><input type="submit" class="btn btn-lg btn-secondary" value="訓練"></td>
+      </tr>
+      <tr>
+        <td><input type="file" name="train_file" multiple></td>
+      </tr>
+    </table>
+    {% csrf_token %}
+  </form>
+  <br />
+  <br />
+  <p class="lead">学習データをアップロードし、OKを押してください</p>
   <form action="{% url 'nn:learn' %}" method="POST" enctype="multipart/form-data">
     <table align="center" border="1">
       <tr>
