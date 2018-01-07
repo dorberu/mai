@@ -1,7 +1,9 @@
 *.out
 *.swp
 *.sqlite3
+*.code-workspace
 __pycache__
 tmp
 .pylintrc
 .vscode
+.DS_Store
