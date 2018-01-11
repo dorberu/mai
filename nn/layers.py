@@ -1,10 +1,17 @@
 # coding: utf-8
+
 import numpy as np
+from typing import *
+from abc import *
 from .functions import *
 from .util import im2col, col2im
 
 
-class Relu:
+class Layer(object):
+    pass
+
+
+class Relu(Layer):
     def __init__(self):
         self.mask = None
 
@@ -12,17 +19,15 @@ class Relu:
         self.mask = (x <= 0)
         out = x.copy()
         out[self.mask] = 0
-
         return out
 
     def backward(self, dout):
         dout[self.mask] = 0
         dx = dout
-
         return dx
 
 
-class Sigmoid:
+class Sigmoid(Layer):
     def __init__(self):
         self.out = None
 
@@ -33,11 +38,10 @@ class Sigmoid:
 
     def backward(self, dout):
         dx = dout * (1.0 - self.out) * self.out
-
         return dx
 
 
-class Affine:
+class Affine(Layer):
     def __init__(self, W, b):
         self.W =W
         self.b = b
@@ -53,31 +57,27 @@ class Affine:
         self.original_x_shape = x.shape
         x = x.reshape(x.shape[0], -1)
         self.x = x
-
         out = np.dot(self.x, self.W) + self.b
-
         return out
 
     def backward(self, dout):
         dx = np.dot(dout, self.W.T)
         self.dW = np.dot(self.x.T, dout)
         self.db = np.sum(dout, axis=0)
-        
         dx = dx.reshape(*self.original_x_shape)  # 入力データの形状に戻す（テンソル対応）
         return dx
 
 
-class SoftmaxWithLoss:
+class SoftmaxWithLoss(Layer):
     def __init__(self):
         self.loss = None
-        self.y = None # softmaxの出力
-        self.t = None # 教師データ
+        self.y = None
+        self.t = None
 
-    def forward(self, x, t):
+    def forward(self, x: np.ndarray, t: np.ndarray):
         self.t = t
         self.y = softmax(x)
         self.loss = cross_entropy_error(self.y, self.t)
-        
         return self.loss
 
     def backward(self, dout=1):
@@ -88,11 +88,26 @@ class SoftmaxWithLoss:
             dx = self.y.copy()
             dx[np.arange(batch_size), self.t] -= 1
             dx = dx / batch_size
-        
         return dx
 
 
-class Dropout:
+class SumSquaresWithLoss(Layer):
+    def __init__(self):
+        self.loss = None
+        self.y = None
+        self.t = None
+
+    def forward(self, x: np.ndarray, t: np.ndarray):
+        self.t = t
+        self.y = identity_function(x)
+        self.loss = mean_squared_error(self.y, self.t)
+        return self.loss
+
+    def backward(self, dout=1):
+        return self.y - self.t
+
+
+class Dropout(Layer):
     """
     http://arxiv.org/abs/1207.0580
     """
@@ -111,7 +126,7 @@ class Dropout:
         return dout * self.mask
 
 
-class BatchNormalization:
+class BatchNormalization(Layer):
     """
     http://arxiv.org/abs/1502.03167
     """
@@ -137,9 +152,7 @@ class BatchNormalization:
         if x.ndim != 2:
             N, C, H, W = x.shape
             x = x.reshape(N, -1)
-
         out = self.__forward(x, train_flg)
-        
         return out.reshape(*self.input_shape)
             
     def __forward(self, x, train_flg):
@@ -172,9 +185,7 @@ class BatchNormalization:
         if dout.ndim != 2:
             N, C, H, W = dout.shape
             dout = dout.reshape(N, -1)
-
         dx = self.__backward(dout)
-
         dx = dx.reshape(*self.input_shape)
         return dx
 
@@ -191,11 +202,10 @@ class BatchNormalization:
         
         self.dgamma = dgamma
         self.dbeta = dbeta
-        
         return dx
 
 
-class Convolution:
+class Convolution(Layer):
     def __init__(self, W, b, stride=1, pad=0):
         self.W = W
         self.b = b
@@ -226,7 +236,6 @@ class Convolution:
         self.x = x
         self.col = col
         self.col_W = col_W
-
         return out
 
     def backward(self, dout):
@@ -239,11 +248,10 @@ class Convolution:
 
         dcol = np.dot(dout, self.col_W.T)
         dx = col2im(dcol, self.x.shape, FH, FW, self.stride, self.pad)
-
         return dx
 
 
-class Pooling:
+class Pooling(Layer):
     def __init__(self, pool_h, pool_w, stride=1, pad=0):
         self.pool_h = pool_h
         self.pool_w = pool_w
@@ -267,7 +275,6 @@ class Pooling:
 
         self.x = x
         self.arg_max = arg_max
-
         return out
 
     def backward(self, dout):
@@ -280,5 +287,4 @@ class Pooling:
         
         dcol = dmax.reshape(dmax.shape[0] * dmax.shape[1] * dmax.shape[2], -1)
         dx = col2im(dcol, self.x.shape, self.pool_h, self.pool_w, self.stride, self.pad)
-        
         return dx

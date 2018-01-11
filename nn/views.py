@@ -1,5 +1,6 @@
 import base64
 
+from typing import List, Dict
 from django.shortcuts import render, redirect
 from django.views import generic
 import numpy as np
@@ -7,7 +8,7 @@ import json
 import itertools
 import random
 from io import BytesIO
-from .util import save_value, save_list
+from .util import save_value
 from .multi_layer_net_extend import MultiLayerNetExtend
 from .trainer import Trainer
 
@@ -21,9 +22,7 @@ class Home(generic.TemplateView):
 
 class Accuracies:
     def __init__(self, trains, tests):
-        self.list = []
-        for i in range(len(trains)):
-            self.list.append(Accuracy(trains[i], tests[i]))
+        self.list = [Accuracy(trains[i], tests[i]) for i in range(len(trains))]
 
 class Accuracy:
     def __init__(self, train, test):
@@ -32,9 +31,7 @@ class Accuracy:
 
 class Results:
     def __init__(self, params, labels):
-        self.list = []
-        for i in range(params.shape[0]):
-            self.list.append(Result(params[i], labels[i]))
+        self.list = [Result(params[i], labels[i]) for i in range(params.shape[0])]
 
 class Result:
     def __init__(self, param, label):
@@ -42,117 +39,105 @@ class Result:
         self.label = label
         self.str_param = np.array2string(param, separator=', ')
 
-class Train:
-    def __init__(self):
-        self.current_hsl = []
-        self.current_wdl = 0
-        self.current_op_lr = 0
-        self.result_acc = 0
-        self.result_hsl = []
-        self.result_wdl = 0
-        self.result_op_lr = 0
+class TrainLog:
 
-    def update(self, acc, hsl, wdl, op_lr):
-        self.current_hsl = hsl
-        self.current_wdl = wdl
-        self.current_op_lr = op_lr
-        self.save_current()
-        if self.result_acc > acc:
-            return False
-        self.result_acc = acc
-        self.result_hsl = hsl
-        self.result_wdl = wdl
-        self.result_op_lr = op_lr
-        self.save_result()
-        return True
+    def __init__(self, acc: float, hsl: List[int], wdl: float, op_lr: float):
+        self.acc = acc
+        self.hsl = hsl
+        self.wdl = wdl
+        self.op_lr = op_lr
 
     def save_current(self):
-        save_list('tmp/nn/train/current_hsl.txt', self.current_hsl)
-        save_value('tmp/nn/train/current_wdl.txt', self.current_wdl)
-        save_value('tmp/nn/train/current_op_lr.txt', self.current_op_lr)
-
-    def save_result(self):
-        save_value('tmp/nn/train/result_acc.txt', self.result_acc)
-        save_list('tmp/nn/train/result_hsl.txt', self.result_hsl)
-        save_value('tmp/nn/train/result_wdl.txt', self.result_wdl)
-        save_value('tmp/nn/train/result_op_lr.txt', self.result_op_lr)
+        output = [ 'acc:' + str(self.acc) ]
+        output += [ 'hsl:[' + ','.join(map(str, self.hsl)) + ']' ]
+        output += [ 'wdl:' + str(self.wdl) ]
+        output += [ 'op_lr:' + str(self.op_lr) ]
+        save_value('tmp/nn/train/current.txt', ','.join(output))
 
 
-def hidden_size_list(layer_num, max_node):
-    node_list = []
+def hidden_size_list(max_layer_num: int, max_node: int) -> List[List[int]]:
+    """隠れ層の全パターンリストを作成
+
+    Parameters
+    ----------
+    max_layer_num : 隠れ層の最大数
+    max_node : 各層のノードの最大数
+
+    Return
+    ----------
+    node_list : 隠れ層の全パターンリスト
+
+    Example
+    ----------
+    max_layer_num = 3, max_node = 2
+    => [[1],[2],[1,1],[1,2],[2,2],[1,1,1],[1,1,2],[1,2,2],[2,2,2]]
+    """
+    node_list = []  # type: List[List[int]]
     seq = range(1, max_node + 1)
-    for i in seq:
-        node_list.append([i])
-
-    if layer_num <= 1:
-        return node_list
-    for i in range(2, layer_num + 1):
-        for tpl in itertools.combinations_with_replacement(seq, i):
-            node_list.append(list(tpl))
-
+    for i in range(1, max_layer_num + 1):
+        node_list += [list(tpl) for tpl in itertools.combinations_with_replacement(seq, i)]
     return node_list
 
 
 def train(request):
-    if request.method != 'POST':
-        return redirect(app_index)
+    if request.method != 'POST': return redirect(app_index)
+    train_file = request.FILES.get('train_file')
+    if train_file is None: return redirect(app_index)
 
-    learn_file = request.FILES.get("train_file")
-    if learn_file == None:
-        return redirect(app_index)
+    learn_dict = json.load(train_file)
+    keys = learn_dict['keys']
+    data = np.array(learn_dict['data'])
+    np.random.shuffle(data)
+    params, result = np.hsplit(data, [data.shape[1] - 1])       # パラメータと正解データに分解
+    x_test, x_train = np.vsplit(params, [data.shape[0] // 3])   # テスト用パラメータと訓練用パラメータ
+    t_test, t_train = np.vsplit(result, [data.shape[0] // 3])   # テスト用正解データと訓練用教師データ
+    input_size = params.shape[1]    # パラメータの個数
 
-    learn_dict = json.load(learn_file)
-    keys = learn_dict["keys"]
-    data = np.array(learn_dict["data"])
-    random.shuffle(data)
-    params, result = np.hsplit(data, [data.shape[1] - 1])
-    x_test, x_train = np.vsplit(params, [data.shape[0] // 3])
-    t_test, t_train = np.vsplit(result, [data.shape[0] // 3])
-    input_size = params.shape[1] * 1
-
-    train_data = Train()
-    for hsl in hidden_size_list(1, 1):
-        for wdl in np.arange(1, 2, 1):
-            for op_lr in np.arange(0.001, 0.002, 0.001):
+    train_log_list = []
+    # for hsl in hidden_size_list(3, 5):
+    #     for wdl in np.arange(0, 0.5, 0.001):
+    #         for op_lr in np.arange(0.001, 0.5, 0.001):
+    for hsl in hidden_size_list(2, 3):
+        for wdl in np.arange(0, 0.003, 0.001):
+            for op_lr in np.arange(0.001, 0.003, 0.001):
                 network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=hsl,
-                                            output_size=1, activation='sigmoid', weight_init_std='sigmoid',
+                                            output_size=1, activation='relu', weight_init_std='relu',
                                             weight_decay_lambda=wdl, use_dropout=False)
                 trainer = Trainer(network, x_train, t_train, x_test, t_test,
-                                epochs=10, mini_batch_size=2,
+                                epochs=20, mini_batch_size=10,
                                 optimizer='adam', optimizer_param={'lr': op_lr}, verbose=True)
                 trainer.train()
-                train_data.update(trainer.result_acc, hsl, wdl, op_lr)
 
-    accuracies = []
+                train_log = TrainLog(trainer.result_acc, hsl, wdl, op_lr)
+                train_log.save_current()
+                train_log_list += [ train_log ]
+
     context = {
-        "accuracies": accuracies
+        "train_log_list": train_log_list
     }
 
     return render(request, app_name + '/train.html', context)
 
 
 def learn(request):
-    if request.method != 'POST':
-        return redirect(app_index)
-
+    if request.method != 'POST': return redirect(app_index)
     learn_file = request.FILES.get("learn_file")
-    if learn_file == None:
-        return redirect(app_index)
+    if learn_file is None: return redirect(app_index)
 
     learn_dict = json.load(learn_file)
     keys = learn_dict["keys"]
     data = np.array(learn_dict["data"])
-    random.shuffle(data)
+    np.random.shuffle(data)
     params, result = np.hsplit(data, [data.shape[1] - 1])
-    x_test, x_train = np.vsplit(params, [data.shape[0] // 5])
-    t_test, t_train = np.vsplit(result, [data.shape[0] // 5])
+    x_test, x_train = np.vsplit(params, [data.shape[0] // 3])
+    t_test, t_train = np.vsplit(result, [data.shape[0] // 3])
+    input_size = params.shape[1]
 
-    input_size = params.shape[1] * 1
-    network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=[15],
-                                output_size=65, weight_decay_lambda=0.000001, use_dropout = True, dropout_ration = 0.1)
+    network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=[5],
+                                output_size=1, activation='relu', weight_init_std='relu',
+                                weight_decay_lambda=0, use_dropout=False)
     trainer = Trainer(network, x_train, t_train, x_test, t_test,
-                    epochs=500000, mini_batch_size=10,
-                    optimizer='adam', optimizer_param={'lr': 0.000001}, verbose=True)
+                    epochs=20000, mini_batch_size=10, optimizer='adam', verbose=True)
     trainer.train()
     network.save_params("tmp/nn/test_params.pkl")
 
@@ -178,12 +163,13 @@ def upload(request):
     if params.shape[1] != 3:
         return redirect(app_index)
 
-    input_size = params.shape[1] * 1
-    network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=[10, 10, 10],
-                                output_size=65, use_dropout=False)
+    input_size = params.shape[1]
+    network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=[5],
+                                output_size=1, activation='relu', weight_init_std='relu',
+                                weight_decay_lambda=0, use_dropout=False)
     network.load_params('tmp/nn/test_params.pkl')
 
-    labels = network.predict(params).argmax(axis=1).reshape(-1, 1)
+    labels = network.predict(params).round().astype(int)
     results = Results(params, labels)
 
     context = {

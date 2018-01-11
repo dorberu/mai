@@ -1,19 +1,31 @@
 # coding: utf-8
-import numpy as np
 
-class SGD:
+import numpy as np
+from typing import *
+from abc import *
+
+
+class Optimizer(object):
+    __metaclass__ = ABCMeta
+    
+    @abstractmethod
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
+        raise NotImplementedError()
+
+
+class SGD(Optimizer):
 
     """確率的勾配降下法（Stochastic Gradient Descent）"""
 
     def __init__(self, lr=0.01):
         self.lr = lr
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         for key in params.keys():
             params[key] -= self.lr * grads[key] 
 
 
-class Momentum:
+class Momentum(Optimizer):
 
     """Momentum SGD"""
 
@@ -22,7 +34,7 @@ class Momentum:
         self.momentum = momentum
         self.v = None
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         if self.v is None:
             self.v = {}
             for key, val in params.items():                                
@@ -33,7 +45,7 @@ class Momentum:
             params[key] += self.v[key]
 
 
-class Nesterov:
+class Nesterov(Optimizer):
 
     """Nesterov's Accelerated Gradient (http://arxiv.org/abs/1212.0901)"""
 
@@ -42,7 +54,7 @@ class Nesterov:
         self.momentum = momentum
         self.v = None
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         if self.v is None:
             self.v = {}
             for key, val in params.items():
@@ -55,7 +67,7 @@ class Nesterov:
             params[key] -= (1 + self.momentum) * self.lr * grads[key]
 
 
-class AdaGrad:
+class AdaGrad(Optimizer):
 
     """AdaGrad"""
 
@@ -63,7 +75,7 @@ class AdaGrad:
         self.lr = lr
         self.h = None
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         if self.h is None:
             self.h = {}
             for key, val in params.items():
@@ -74,7 +86,7 @@ class AdaGrad:
             params[key] -= self.lr * grads[key] / (np.sqrt(self.h[key]) + 1e-7)
 
 
-class RMSprop:
+class RMSprop(Optimizer):
 
     """RMSprop"""
 
@@ -83,7 +95,7 @@ class RMSprop:
         self.decay_rate = decay_rate
         self.h = None
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         if self.h is None:
             self.h = {}
             for key, val in params.items():
@@ -95,7 +107,7 @@ class RMSprop:
             params[key] -= self.lr * grads[key] / (np.sqrt(self.h[key]) + 1e-7)
 
 
-class Adam:
+class Adam(Optimizer):
 
     """Adam (http://arxiv.org/abs/1412.6980v8)"""
 
@@ -107,7 +119,7 @@ class Adam:
         self.m = None
         self.v = None
         
-    def update(self, params, grads):
+    def update(self, params: Dict[str, np.ndarray], grads: Dict[str, np.ndarray]):
         if self.m is None:
             self.m, self.v = {}, {}
             for key, val in params.items():
@@ -118,13 +130,6 @@ class Adam:
         lr_t  = self.lr * np.sqrt(1.0 - self.beta2**self.iter) / (1.0 - self.beta1**self.iter)         
         
         for key in params.keys():
-            #self.m[key] = self.beta1*self.m[key] + (1-self.beta1)*grads[key]
-            #self.v[key] = self.beta2*self.v[key] + (1-self.beta2)*(grads[key]**2)
             self.m[key] += (1 - self.beta1) * (grads[key] - self.m[key])
             self.v[key] += (1 - self.beta2) * (grads[key]**2 - self.v[key])
-            
             params[key] -= lr_t * self.m[key] / (np.sqrt(self.v[key]) + 1e-7)
-            
-            #unbias_m += (1 - self.beta1) * (grads[key] - self.m[key]) # correct bias
-            #unbisa_b += (1 - self.beta2) * (grads[key]*grads[key] - self.v[key]) # correct bias
-            #params[key] += self.lr * unbias_m / (np.sqrt(unbisa_b) + 1e-7)

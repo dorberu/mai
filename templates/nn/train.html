@@ -4,9 +4,19 @@
 <div class="mt-5 text-center">
   訓練完了<br />
   訓練結果のパラメータは下記の通りです。<br /><br />
-  {% for accuracy in accuracies.list %}
-    a<br />
-  {% endfor %}
+  <table align="center" border=1>
+    <tr>
+        <th>認識精度</th><th>hsl</th><th>wdl</th><th>op_lr</th>
+    </tr>
+    {% for train_log in train_log_list %}
+      <tr>
+        <td>{{ train_log.acc }}</td>
+        <td>{{ train_log.hsl }}</td>
+        <td>{{ train_log.wdl }}</td>
+        <td>{{ train_log.op_lr }}</td>
+      </tr>
+    {% endfor %}
+  </table>
   <a class="btn btn-lg btn-secondary"  href="{% url 'nn:index' %}">戻る</a>
 </div>
  

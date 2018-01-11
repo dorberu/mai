@@ -1,4 +1,6 @@
 # coding: utf-8
+
+from typing import *
 import numpy as np
 
 
@@ -28,10 +30,18 @@ def relu_grad(x):
     return grad
     
 
-def softmax(x):
+def softmax(x: np.ndarray) -> np.ndarray:
+    """ソフトマックス関数
+
+    入力に対して出力の成分の和が１になるように各成分を０以上１以下にする
+
+    Parameters
+    ----------
+    x : 入力データ(e.g. [[1,2],[3,4]])
+    """
     if x.ndim == 2:
         x = x.T
-        x = x - np.max(x, axis=0)
+        x = x - np.max(x, axis=0)   # 同一列内での最大値を取得
         y = np.exp(x) / np.sum(np.exp(x), axis=0)
         return y.T 
 
@@ -39,11 +49,11 @@ def softmax(x):
     return np.exp(x) / np.sum(np.exp(x))
 
 
-def mean_squared_error(y, t):
+def mean_squared_error(y: np.ndarray, t: np.ndarray):
     return 0.5 * np.sum((y-t)**2)
 
 
-def cross_entropy_error(y, t):
+def cross_entropy_error(y: np.ndarray, t: np.ndarray):
     if y.ndim == 1:
         t = t.reshape(1, t.size)
         y = y.reshape(1, y.size)
