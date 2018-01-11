@@ -94,17 +94,14 @@ def train(request):
     input_size = params.shape[1]    # パラメータの個数
 
     train_log_list = []
-    # for hsl in hidden_size_list(3, 5):
-    #     for wdl in np.arange(0, 0.5, 0.001):
-    #         for op_lr in np.arange(0.001, 0.5, 0.001):
-    for hsl in hidden_size_list(2, 3):
-        for wdl in np.arange(0, 0.003, 0.001):
-            for op_lr in np.arange(0.001, 0.003, 0.001):
+    for hsl in hidden_size_list(3, 5):
+        for wdl in np.arange(0, 0.5, 0.001):
+            for op_lr in np.arange(0.001, 0.5, 0.001):
                 network = MultiLayerNetExtend(input_size=input_size, hidden_size_list=hsl,
                                             output_size=1, activation='relu', weight_init_std='relu',
                                             weight_decay_lambda=wdl, use_dropout=False)
                 trainer = Trainer(network, x_train, t_train, x_test, t_test,
-                                epochs=20, mini_batch_size=10,
+                                epochs=200, mini_batch_size=10,
                                 optimizer='adam', optimizer_param={'lr': op_lr}, verbose=True)
                 trainer.train()
 
@@ -137,7 +134,7 @@ def learn(request):
                                 output_size=1, activation='relu', weight_init_std='relu',
                                 weight_decay_lambda=0, use_dropout=False)
     trainer = Trainer(network, x_train, t_train, x_test, t_test,
-                    epochs=20000, mini_batch_size=10, optimizer='adam', verbose=True)
+                    epochs=2000, mini_batch_size=10, optimizer='adam', verbose=True)
     trainer.train()
     network.save_params("tmp/nn/test_params.pkl")
 
